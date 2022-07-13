@@ -417,7 +417,6 @@ textarea {
 #animation {
     height: 150px;
     width: 150px;
-    margin: auto;
     top: 0%;
     position: relative;
     background-image: url("../imagens/orra.png");
@@ -433,20 +432,22 @@ textarea {
 @keyframes huh {
     12.5% {
         transform: rotate(180deg);
+        left: calc(50%-75px);
     }
 
     25% {
-        top: 450px;
+        left: calc(100%-150px);
         background-image: url("../imagens/sup.png");
         transform: rotate(360deg);
     }
 
     37.5% {
         transform: rotate(540deg);
+        top: calc(50%-75px);
     }
 
     50% {
-        top: 0px;
+        top: 450px;
         background-image: url("../imagens/sup.png");
         transform: rotate(720deg);
 
@@ -454,16 +455,18 @@ textarea {
 
     62.5% {
         transform: rotate(540deg);
+        left: calc(100%-150px);
     }
 
     75% {
         background-image: url("../imagens/orra.png");
-        top: 450px;
         transform: rotate(360deg);
+        left: 0%;
     }
 
     87.5% {
         transform: rotate(180deg);
+        top: calc(50%-75px);
     }
 
     100% {
