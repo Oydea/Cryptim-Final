@@ -166,18 +166,22 @@ main {
     font-family: 'Arima Madurai', cursive;
     color: rgb(221, 221, 221);
 }
-main h2,h3{
+
+main h2,
+h3 {
     text-align: center;
 }
+
 #video {
     max-width: 100%;
     position: relative;
     padding-top: 56.25%;
 }
-#video-holder{
-padding-bottom: 5px;
-margin: auto;
-max-width: 650px;
+
+#video-holder {
+    padding-bottom: 5px;
+    margin: auto;
+    max-width: 650px;
 
 }
 
@@ -194,6 +198,7 @@ span {
     text-decoration: underline;
     font-weight: bolder;
 }
+
 .pic {
     border: 5px outset rgb(95, 95, 95);
 }
@@ -207,46 +212,51 @@ span {
 .listinha {
     text-align: center;
 }
-.bigfoot-et, #nessie{
+
+.bigfoot-et,
+#nessie {
     display: flex;
     margin: 25px;
     align-items: center;
 }
 
-.bigfoot-et{
+.bigfoot-et {
     flex-direction: row;
 }
 
-#nessie{
+#nessie {
     flex-direction: row-reverse;
 }
 
-.monstertext{
+.monstertext {
     display: block;
     text-align: center;
     margin: 5px;
 }
-@media (max-width: 1080px){
-    #nessie{ 
+
+@media (max-width: 1080px) {
+    #nessie {
         flex-direction: column;
-        justify-content: center;}
+        justify-content: center;
+    }
 
 }
 
-@media (max-width: 795px){
-    .bigfoot-et{ 
+@media (max-width: 795px) {
+    .bigfoot-et {
         flex-direction: column;
-        justify-content: center;}
+        justify-content: center;
+    }
 
 }
 
-#galeria{
+#galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.cardimagem{
+.cardimagem {
     position: relative;
     text-align: center;
     width: 400px;
@@ -255,35 +265,43 @@ span {
     margin-bottom: 25px;
 }
 
-.cardtext{
+.cardtext {
     position: absolute;
-    bottom: 0%;
-    background-image: linear-gradient(to bottom, rgba(255,0,0,0), black);
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), black);
 }
-#tabela{
+
+#tabela {
     overflow-x: auto;
 }
-table li{
+
+table li {
     margin-left: 25px;
     list-style-type: disc;
 }
-.sub{
+
+.sub {
     margin-left: 20px;
 }
-table, th, td{
+
+table,
+th,
+td {
     border: 2px solid rgb(114, 114, 114);
     padding: 2px;
     border-radius: 10px;
 }
-thead{
+
+thead {
     font-size: 20px;
     background-color: black;
 }
-td:not(.lista){
+
+td:not(.lista) {
     text-align: center;
 }
 
-#produtos{
+#produtos {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -318,8 +336,13 @@ td:not(.lista){
     text-decoration: line-through;
 }
 
-.form-control {
-    background-color: #373b3e;
+.qsomos {
+    margin: 20px 0 0 20px;
+    padding-bottom: 20px;
+}
+
+.qsomos li {
+    margin-left: 20px;
 }
 
 .ocupation {
@@ -351,4 +374,101 @@ figure {
     display: flex;
     flex-flow: column;
     max-width: 220px;
+}
+
+fieldset {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+input {
+    background-color: rgb(81, 81, 81);
+    border: 1px solid black;
+}
+
+#date {
+    color: white;
+}
+
+#file {
+    background-color: none;
+}
+
+button {
+    display: block;
+    width: 80px;
+    height: 40px;
+    font-size: large;
+}
+
+textarea {
+    width: 50%;
+    height: 200px;
+    resize: none;
+    background-color: rgb(81, 81, 81);
+    color: white;
+}
+
+#anim {
+    height: 600px;
+    overflow-x: hidden;
+}
+
+#animation {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    top: 0%;
+    position: relative;
+    background-image: url("../imagens/orra.png");
+    background-size: cover;
+    animation-name: huh;
+    animation-duration: 20s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+@keyframes huh {
+    12.5% {
+        transform: rotate(180deg);
+    }
+
+    25% {
+        top: 450px;
+        background-image: url("../imagens/sup.png");
+        transform: rotate(360deg);
+    }
+
+    37.5% {
+        transform: rotate(540deg);
+    }
+
+    50% {
+        top: 0px;
+        background-image: url("../imagens/sup.png");
+        transform: rotate(720deg);
+
+    }
+
+    62.5% {
+        transform: rotate(540deg);
+    }
+
+    75% {
+        background-image: url("../imagens/orra.png");
+        top: 450px;
+        transform: rotate(360deg);
+    }
+
+    87.5% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        background-image: url("../imagens/orra.png");
+        top: 0px;
+        transform: rotate(0deg);
+    }
 }
