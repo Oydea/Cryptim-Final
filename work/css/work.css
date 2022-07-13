@@ -390,10 +390,6 @@ input {
     color: white;
 }
 
-#file {
-    background-color: none;
-}
-
 button {
     display: block;
     width: 80px;
@@ -411,13 +407,14 @@ textarea {
 
 #anim {
     height: 600px;
-    overflow-x: hidden;
+    overflow:hidden;
 }
 
 #animation {
     height: 150px;
     width: 150px;
     top: 0%;
+    left: 0%;
     position: relative;
     background-image: url("../imagens/orra.png");
     background-size: cover;
@@ -431,47 +428,55 @@ textarea {
 
 @keyframes huh {
     12.5% {
-        transform: rotate(180deg);
-        left: calc(50%-75px);
+        transform: rotate(-180deg);
+        left: calc(50% - 75px);
+        top: 0%;
     }
 
     25% {
-        left: calc(100%-150px);
+        left: calc(100% - 150px);
+        top: 0%;
         background-image: url("../imagens/sup.png");
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 
     37.5% {
-        transform: rotate(540deg);
-        top: calc(50%-75px);
+        transform: rotate(-540deg);
+        top: calc(50% - 75px);
+        left: calc(100% - 150px);
     }
 
     50% {
         top: 450px;
+        left: calc(100% - 150px);
         background-image: url("../imagens/sup.png");
-        transform: rotate(720deg);
+        transform: rotate(-720deg);
 
     }
 
     62.5% {
-        transform: rotate(540deg);
-        left: calc(100%-150px);
+        top: 450px;
+        left: calc(50% - 75px);
+        transform: rotate(-900deg);
     }
 
     75% {
         background-image: url("../imagens/orra.png");
-        transform: rotate(360deg);
+        transform: rotate(-1080deg);
         left: 0%;
+        top: 450px;
     }
 
     87.5% {
-        transform: rotate(180deg);
-        top: calc(50%-75px);
+        transform: rotate(-1260deg);
+        left: 0%;
+        top: calc(50% - 75px);
     }
 
     100% {
         background-image: url("../imagens/orra.png");
         top: 0px;
-        transform: rotate(0deg);
+        left: 0%;
+        transform: rotate(-1440deg);
     }
 }
